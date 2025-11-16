@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import OutfitGenerator from "./components/OutfitGenerator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen">
+      <OutfitGenerator />
+    </div>
+
+    <footer>
+      <div className="text-center p-4 bg-purple-600 text-white">
+        &copy; OutfitGenerator-ByYaniss. Tous droits réservés.
+      </div>
+    </footer>
     </div>
   );
 }
